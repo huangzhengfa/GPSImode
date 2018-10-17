@@ -1,0 +1,11 @@
+*.backup.*
+.log*
+/.cache/
+/*.cache/
+*.jou
+/*.temp/
+/*.tmp/
+*.tmp
+*.cache
+
+*.zip

@@ -1,0 +1,485 @@
+19:40:32 INFO  : Launching XSDB server: xsdb.bat -interactive F:\Recent_Project\gpsImode_Proj_2\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+19:40:33 INFO  : XSDB server has started successfully.
+19:40:33 INFO  : Processing command line option -hwspec F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper.hdf.
+19:42:06 INFO  : Refreshed build settings on project TDC
+19:43:30 INFO  : No changes in MSS file content so not generating sources.
+19:46:26 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o F:\Recent_Project\gpsImode_Proj_2\gpsImode_Proj.sdk\TDC\boot\BOOT.bin
+19:46:26 INFO  : Creating new bif file F:\Recent_Project\gpsImode_Proj_2\gpsImode_Proj.sdk\TDC\boot\output.bif
+19:46:27 INFO  : Bootgen command execution is done.
+19:47:24 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o F:\Recent_Project\gpsImode_Proj_2\gpsImode_Proj.sdk\TDC\boot\tdc.mcs -w on
+19:47:24 INFO  : Overwriting existing bif file F:\Recent_Project\gpsImode_Proj_2\gpsImode_Proj.sdk\TDC\boot\output.bif
+19:47:28 INFO  : Bootgen command execution is done.
+09:42:30 INFO  : Launching XSDB server: xsdb.bat -interactive F:\Recent_Project\gpsImode_Proj_2\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+09:42:35 INFO  : XSDB server has started successfully.
+09:42:38 INFO  : Processing command line option -hwspec F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper.hdf.
+09:42:38 INFO  : Checking for hwspec changes in the project gpsImode_wrapper_hw_platform_0.
+10:59:54 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\zhang\Desktop\progect\gpsImode_Proj_2\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+10:59:57 INFO  : XSDB server has started successfully.
+10:59:58 INFO  : Processing command line option -hwspec C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper.hdf.
+11:05:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686557" && level==0} -index 1' command is executed.
+11:05:49 INFO  : 'fpga -state' command is executed.
+11:05:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:05:49 INFO  : Jtag cable 'Digilent Zed 210248686557' is selected.
+11:05:49 INFO  : 'jtag frequency' command is executed.
+11:05:49 INFO  : Sourcing of 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:05:49 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+11:05:49 INFO  : Hardware design information is loaded from 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf'.
+11:05:49 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+11:05:49 INFO  : 'stop' command is executed.
+11:05:49 INFO  : 'ps7_init' command is executed.
+11:05:49 INFO  : 'ps7_post_config' command is executed.
+11:05:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:05:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:05:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:05:50 INFO  : The application 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:05:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+loadhw C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+dow C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf
+----------------End of Script----------------
+
+11:05:50 INFO  : Memory regions updated for context APU
+11:05:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:05:50 INFO  : 'con' command is executed.
+11:05:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+con
+----------------End of Script----------------
+
+11:05:50 INFO  : Launch script is exported to file 'C:\Users\zhang\Desktop\progect\gpsImode_Proj_2\gpsImode_Proj.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_tdc.elf.tcl'
+11:16:29 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\zhang\Desktop\progect\gpsImode_Proj_2\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+14:13:08 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\zhang\Desktop\progect\gpsImode_Proj_2\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+14:13:20 INFO  : XSDB server has started successfully.
+14:13:21 INFO  : Processing command line option -hwspec C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper.hdf.
+14:13:22 INFO  : Checking for hwspec changes in the project gpsImode_wrapper_hw_platform_1.
+14:37:22 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\zhang\Desktop\progect\gpsImode_Proj_2\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+14:37:24 INFO  : XSDB server has started successfully.
+14:37:25 INFO  : Processing command line option -hwspec C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper.hdf.
+14:37:25 INFO  : Checking for hwspec changes in the project gpsImode_wrapper_hw_platform_1.
+14:40:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686557" && level==0} -index 1' command is executed.
+14:40:27 INFO  : 'fpga -state' command is executed.
+14:40:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:40:27 INFO  : Jtag cable 'Digilent Zed 210248686557' is selected.
+14:40:27 INFO  : 'jtag frequency' command is executed.
+14:40:27 INFO  : Sourcing of 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:40:27 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+14:40:27 INFO  : Hardware design information is loaded from 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf'.
+14:40:27 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+14:40:27 INFO  : 'stop' command is executed.
+14:40:28 INFO  : 'ps7_init' command is executed.
+14:40:28 INFO  : 'ps7_post_config' command is executed.
+14:40:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:40:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:40:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:40:28 INFO  : The application 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:40:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+loadhw C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+dow C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf
+----------------End of Script----------------
+
+14:40:28 INFO  : Memory regions updated for context APU
+14:40:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:40:28 INFO  : 'con' command is executed.
+14:40:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+con
+----------------End of Script----------------
+
+14:40:28 INFO  : Launch script is exported to file 'C:\Users\zhang\Desktop\progect\gpsImode_Proj_2\gpsImode_Proj.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_tdc.elf.tcl'
+14:41:18 INFO  : Disconnected from the channel tcfchan#1.
+14:41:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686557" && level==0} -index 1' command is executed.
+14:41:18 INFO  : 'fpga -state' command is executed.
+14:41:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:41:18 INFO  : Jtag cable 'Digilent Zed 210248686557' is selected.
+14:41:18 INFO  : 'jtag frequency' command is executed.
+14:41:18 INFO  : Sourcing of 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:41:18 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+14:41:21 INFO  : Hardware design information is loaded from 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf'.
+14:41:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+14:41:21 INFO  : 'stop' command is executed.
+14:41:22 INFO  : 'ps7_init' command is executed.
+14:41:22 INFO  : 'ps7_post_config' command is executed.
+14:41:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:41:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:41:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:41:22 INFO  : The application 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:41:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+loadhw C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+dow C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf
+----------------End of Script----------------
+
+14:41:22 INFO  : Memory regions updated for context APU
+14:41:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:41:22 INFO  : 'con' command is executed.
+14:41:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+con
+----------------End of Script----------------
+
+14:41:22 INFO  : Launch script is exported to file 'C:\Users\zhang\Desktop\progect\gpsImode_Proj_2\gpsImode_Proj.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_tdc.elf.tcl'
+14:48:06 INFO  : Disconnected from the channel tcfchan#2.
+15:16:36 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\zhang\Desktop\progect\gpsImode_Proj_2\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+15:16:38 INFO  : XSDB server has started successfully.
+15:16:39 INFO  : Processing command line option -hwspec C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper.hdf.
+15:16:39 INFO  : Checking for hwspec changes in the project gpsImode_wrapper_hw_platform_1.
+15:17:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686557" && level==0} -index 1' command is executed.
+15:17:49 INFO  : 'fpga -state' command is executed.
+15:17:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:17:49 INFO  : Jtag cable 'Digilent Zed 210248686557' is selected.
+15:17:49 INFO  : 'jtag frequency' command is executed.
+15:17:49 INFO  : Sourcing of 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:17:49 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+15:17:49 INFO  : Hardware design information is loaded from 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf'.
+15:17:49 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+15:17:49 INFO  : 'stop' command is executed.
+15:17:50 INFO  : 'ps7_init' command is executed.
+15:17:50 INFO  : 'ps7_post_config' command is executed.
+15:17:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:17:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:17:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:17:51 INFO  : The application 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:17:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+loadhw C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+dow C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf
+----------------End of Script----------------
+
+15:17:51 INFO  : Memory regions updated for context APU
+15:17:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:17:51 INFO  : 'con' command is executed.
+15:17:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+con
+----------------End of Script----------------
+
+15:17:51 INFO  : Launch script is exported to file 'C:\Users\zhang\Desktop\progect\gpsImode_Proj_2\gpsImode_Proj.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_tdc.elf.tcl'
+15:18:25 INFO  : Disconnected from the channel tcfchan#1.
+15:18:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686557" && level==0} -index 1' command is executed.
+15:18:25 INFO  : 'fpga -state' command is executed.
+15:18:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:18:25 INFO  : Jtag cable 'Digilent Zed 210248686557' is selected.
+15:18:25 INFO  : 'jtag frequency' command is executed.
+15:18:25 INFO  : Sourcing of 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:18:25 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+15:18:28 INFO  : Hardware design information is loaded from 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf'.
+15:18:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+15:18:28 INFO  : 'stop' command is executed.
+15:18:29 INFO  : 'ps7_init' command is executed.
+15:18:29 INFO  : 'ps7_post_config' command is executed.
+15:18:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:18:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:18:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:18:29 INFO  : The application 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:18:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+loadhw C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+dow C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf
+----------------End of Script----------------
+
+15:18:29 INFO  : Memory regions updated for context APU
+15:18:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:18:29 INFO  : 'con' command is executed.
+15:18:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+con
+----------------End of Script----------------
+
+15:18:29 INFO  : Launch script is exported to file 'C:\Users\zhang\Desktop\progect\gpsImode_Proj_2\gpsImode_Proj.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_tdc.elf.tcl'
+15:23:54 INFO  : Disconnected from the channel tcfchan#2.
+15:23:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686557" && level==0} -index 1' command is executed.
+15:23:54 INFO  : 'fpga -state' command is executed.
+15:23:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:23:54 INFO  : Jtag cable 'Digilent Zed 210248686557' is selected.
+15:23:54 INFO  : 'jtag frequency' command is executed.
+15:23:54 INFO  : Sourcing of 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:23:54 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+15:23:54 INFO  : Hardware design information is loaded from 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf'.
+15:23:54 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+15:23:54 INFO  : 'stop' command is executed.
+15:23:55 INFO  : 'ps7_init' command is executed.
+15:23:55 INFO  : 'ps7_post_config' command is executed.
+15:23:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:23:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:23:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:23:55 INFO  : The application 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:23:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+loadhw C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+dow C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf
+----------------End of Script----------------
+
+15:23:55 INFO  : Memory regions updated for context APU
+15:23:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:23:55 INFO  : 'con' command is executed.
+15:23:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+con
+----------------End of Script----------------
+
+15:23:55 INFO  : Launch script is exported to file 'C:\Users\zhang\Desktop\progect\gpsImode_Proj_2\gpsImode_Proj.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_tdc.elf.tcl'
+15:32:55 INFO  : Disconnected from the channel tcfchan#3.
+15:32:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686557" && level==0} -index 1' command is executed.
+15:32:55 INFO  : 'fpga -state' command is executed.
+15:32:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:32:55 INFO  : Jtag cable 'Digilent Zed 210248686557' is selected.
+15:32:55 INFO  : 'jtag frequency' command is executed.
+15:32:55 INFO  : Sourcing of 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:32:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+15:32:55 INFO  : Hardware design information is loaded from 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf'.
+15:32:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+15:32:55 INFO  : 'stop' command is executed.
+15:32:55 INFO  : 'ps7_init' command is executed.
+15:32:55 INFO  : 'ps7_post_config' command is executed.
+15:32:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:32:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:32:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:32:56 INFO  : The application 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:32:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+loadhw C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+dow C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf
+----------------End of Script----------------
+
+15:32:56 INFO  : Memory regions updated for context APU
+15:32:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:32:56 INFO  : 'con' command is executed.
+15:32:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+con
+----------------End of Script----------------
+
+15:32:56 INFO  : Launch script is exported to file 'C:\Users\zhang\Desktop\progect\gpsImode_Proj_2\gpsImode_Proj.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_tdc.elf.tcl'
+16:08:21 INFO  : Disconnected from the channel tcfchan#4.
+09:37:52 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\zhang\Desktop\progect\gpsImode_Proj_2\gpsImode_Proj.sdk\temp_xsdb_launch_script.tcl
+09:37:54 INFO  : XSDB server has started successfully.
+09:37:54 INFO  : Processing command line option -hwspec C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper.hdf.
+09:37:54 INFO  : Checking for hwspec changes in the project gpsImode_wrapper_hw_platform_1.
+09:40:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686557" && level==0} -index 1' command is executed.
+09:40:30 INFO  : 'fpga -state' command is executed.
+09:40:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:40:30 INFO  : Jtag cable 'Digilent Zed 210248686557' is selected.
+09:40:30 INFO  : 'jtag frequency' command is executed.
+09:40:30 INFO  : Sourcing of 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:40:30 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+09:40:30 INFO  : Hardware design information is loaded from 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf'.
+09:40:30 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+09:40:30 INFO  : 'stop' command is executed.
+09:40:30 INFO  : 'ps7_init' command is executed.
+09:40:30 INFO  : 'ps7_post_config' command is executed.
+09:40:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:40:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:40:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:40:31 INFO  : The application 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:40:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+loadhw C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+dow C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf
+----------------End of Script----------------
+
+09:40:31 INFO  : Memory regions updated for context APU
+09:40:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:40:31 INFO  : 'con' command is executed.
+09:40:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+con
+----------------End of Script----------------
+
+09:40:31 INFO  : Launch script is exported to file 'C:\Users\zhang\Desktop\progect\gpsImode_Proj_2\gpsImode_Proj.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_tdc.elf.tcl'
+10:00:28 INFO  : Disconnected from the channel tcfchan#1.
+10:00:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686557" && level==0} -index 1' command is executed.
+10:00:28 INFO  : 'fpga -state' command is executed.
+10:00:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:00:28 INFO  : Jtag cable 'Digilent Zed 210248686557' is selected.
+10:00:28 INFO  : 'jtag frequency' command is executed.
+10:00:28 INFO  : Sourcing of 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:00:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+10:00:31 INFO  : Hardware design information is loaded from 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf'.
+10:00:31 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+10:00:31 INFO  : 'stop' command is executed.
+10:00:31 INFO  : 'ps7_init' command is executed.
+10:00:31 INFO  : 'ps7_post_config' command is executed.
+10:00:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:00:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:00:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:00:32 INFO  : The application 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:00:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+loadhw C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+dow C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf
+----------------End of Script----------------
+
+10:00:32 INFO  : Memory regions updated for context APU
+10:00:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:00:32 INFO  : 'con' command is executed.
+10:00:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+con
+----------------End of Script----------------
+
+10:00:32 INFO  : Launch script is exported to file 'C:\Users\zhang\Desktop\progect\gpsImode_Proj_2\gpsImode_Proj.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_tdc.elf.tcl'
+10:01:04 INFO  : Disconnected from the channel tcfchan#2.
+10:01:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686557" && level==0} -index 1' command is executed.
+10:01:04 INFO  : 'fpga -state' command is executed.
+10:01:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:01:04 INFO  : Jtag cable 'Digilent Zed 210248686557' is selected.
+10:01:04 INFO  : 'jtag frequency' command is executed.
+10:01:04 INFO  : Sourcing of 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:01:04 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+10:01:04 INFO  : Hardware design information is loaded from 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf'.
+10:01:04 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+10:01:04 INFO  : 'stop' command is executed.
+10:01:05 INFO  : 'ps7_init' command is executed.
+10:01:05 INFO  : 'ps7_post_config' command is executed.
+10:01:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:01:05 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:01:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:01:05 INFO  : The application 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:01:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+loadhw C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+dow C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf
+----------------End of Script----------------
+
+10:01:05 INFO  : Memory regions updated for context APU
+10:01:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:01:05 INFO  : 'con' command is executed.
+10:01:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+con
+----------------End of Script----------------
+
+10:01:05 INFO  : Launch script is exported to file 'C:\Users\zhang\Desktop\progect\gpsImode_Proj_2\gpsImode_Proj.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_tdc.elf.tcl'
+10:40:43 INFO  : Disconnected from the channel tcfchan#3.
+10:40:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248686557" && level==0} -index 1' command is executed.
+10:40:43 INFO  : 'fpga -state' command is executed.
+10:40:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:40:43 INFO  : Jtag cable 'Digilent Zed 210248686557' is selected.
+10:40:43 INFO  : 'jtag frequency' command is executed.
+10:40:43 INFO  : Sourcing of 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:40:43 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+10:40:43 INFO  : Hardware design information is loaded from 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf'.
+10:40:43 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0' command is executed.
+10:40:43 INFO  : 'stop' command is executed.
+10:40:44 INFO  : 'ps7_init' command is executed.
+10:40:44 INFO  : 'ps7_post_config' command is executed.
+10:40:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:40:44 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:40:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:40:44 INFO  : The application 'C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:40:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+loadhw C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+dow C:/Users/zhang/Desktop/progect/gpsImode_Proj_2/gpsImode_Proj.sdk/TDC/Debug/TDC.elf
+----------------End of Script----------------
+
+10:40:44 INFO  : Memory regions updated for context APU
+10:40:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:40:44 INFO  : 'con' command is executed.
+10:40:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248686557"} -index 0
+con
+----------------End of Script----------------
+
+10:40:44 INFO  : Launch script is exported to file 'C:\Users\zhang\Desktop\progect\gpsImode_Proj_2\gpsImode_Proj.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_tdc.elf.tcl'
+10:44:46 INFO  : Disconnected from the channel tcfchan#4.

@@ -1,0 +1,1335 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 10768
+
+Current time: 	2/28/18 9:00:41 AM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=SimSun,name=宋体,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	D:/ProgramFiles/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	zhang
+User home directory: C:/Users/zhang
+User working directory: F:/Recent_Project/gpsImode_Proj_2
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI Base root directory: D:/ProgramFiles/Xilinx/Vivado
+RDI Data directory: D:/ProgramFiles/Xilinx/Vivado/2016.2/data
+RDI Bin directory: D:/ProgramFiles/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/zhang/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/zhang/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	183 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 497 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 46 MB (+45822kb) [00:00:03]
+// [Engine Memory]: 425 MB (+294550kb) [00:00:03]
+// Opening Vivado Project: F:\Recent_Project\gpsImode_Proj_2\gpsImode_Proj.xpr. Version: Vivado v2016.2 
+// bL:g (cv:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// [Engine Memory]: 577 MB (+137002kb) [00:00:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 577 MB. GUI used memory: 31 MB. Current time: 2/28/18 9:00:43 AM CST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 64 MB (+16538kb) [00:00:11]
+// [Engine Memory]: 663 MB (+59088kb) [00:00:11]
+// [GUI Memory]: 95 MB (+28659kb) [00:00:12]
+// [GUI Memory]: 103 MB (+3787kb) [00:00:12]
+// [Engine Memory]: 730 MB (+35491kb) [00:00:12]
+// [GUI Memory]: 114 MB (+6037kb) [00:00:14]
+// [Engine Memory]: 782 MB (+16753kb) [00:00:14]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'F:/Recent_Project/gpsImode_Proj' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Recent_Project/gpsImode_Proj_2/ip_repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramFiles/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 120 MB (+700kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: gpsImode_Proj; location: F:/Recent_Project/gpsImode_Proj_2; part: xc7z020clg484-1
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:12 . Memory (MB): peak = 964.492 ; gain = 283.535 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bL:g (cv:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 824 MB (+3123kb) [00:00:21]
+// Tcl Message: open_bd_design {F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd} 
+// Tcl Message: Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0 Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_0 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_0Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_1 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_1Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_2 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_2Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_3 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_3Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_4 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_4Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_5 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_5Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_6 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_6Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_7 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_7Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_8 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_8Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_9 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_9Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_10 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_10Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_11 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_11Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_12 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_12Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_13 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_13Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_14 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_14Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_15 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_15Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_16 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_16Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_17 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_17Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_18 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_18Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_19 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_19Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_20 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_20Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_21 
+// Tcl Message: INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_21Executing the post_config_ip from bd 
+// Tcl Message: Adding cell -- xilinx.com:user:myip_fifo_ctrl:1.0 - myip_fifo_ctrl_0 Adding cell -- xilinx.com:user:myImode:1.0 - myImode_0 Adding cell -- xilinx.com:user:newGpsIp:1.0 - newGpsIp_0 Adding cell -- xilinx.com:user:Status:1.0 - Status_0 Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Successfully read diagram <gpsImode> from BD file <F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 897 MB (+33261kb) [00:00:23]
+// [GUI Memory]: 128 MB (+1312kb) [00:00:23]
+// TclEventType: RSB_CONNECTION_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 897 MB. GUI used memory: 54 MB. Current time: 2/28/18 9:00:59 AM CST
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// 'bs' command handler elapsed time: 4 seconds
+dismissDialog("Open Block Design"); // bL:g (cv:JFrame)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 747, 285, 1192, 612, false, false, false, true, false); // ew:aK (TdiGroup:JideTabbedPane, cv:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k:x (cv:JFrame): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, k:x)
+// bL:g (cv:JFrame):  Edit in IP Packager : addNotify
+selectButton("PAResourceEtoH.EditIPProjectNameChooser_PROJECT_FOLDER_ALREADY_EXISTS_OK_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name myImode_v1_0_project -directory F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.tmp/myImode_v1_0_project f:/Recent_Project/gpsImode_Proj_2/ip_repo/myImode_1.0/component.xml 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramFiles/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Recent_Project/gpsImode_Proj_2/ip_repo'. INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// 'i' command handler elapsed time: 6 seconds
+dismissDialog("Edit in IP Packager"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myImode_v1_0 (myImode_v1_0.v)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myImode_v1_0 (myImode_v1_0.v), myImode_v1_0_S00_AXI_inst - myImode_v1_0_S00_AXI (myImode_v1_0_S00_AXI.v)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myImode_v1_0 (myImode_v1_0.v), myImode_v1_0_S00_AXI_inst - myImode_v1_0_S00_AXI (myImode_v1_0_S00_AXI.v)]", 2, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+setText("PAResourceAtoD.AbstractFileView_READ_ONLY", "f:/Recent_Project/gpsImode_Proj_2/ip_repo/myImode_1.0/hdl/myImode_v1_0_S00_AXI.v"); // c:ao (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 329 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // i:l (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 100 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // i:l (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 37 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // i:l (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 259 seconds
+selectCodeEditor("myImode_v1_0_S00_AXI.v", 189, 357); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("myImode_v1_0_S00_AXI.v", 329, 36); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 31 seconds
+closeMainWindow("myImode_v1_0_project - [f:/recent_project/gpsimode_proj_2/gpsimode_proj.tmp/myimode_v1_0_project/myImode_v1_0_project.xpr] - Vivado 2016.2"); // cv:JFrame
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// G:be (cv:JFrame): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, G:be)
+dismissDialog("Close Project"); // G:be (cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 917 MB. GUI used memory: 67 MB. Current time: 2/28/18 9:14:14 AM CST
+// Tcl Message: current_project gpsImode_Proj 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: current_project myImode_v1_0_project 
+// Tcl Message: current_project gpsImode_Proj 
+// Elapsed time: 663 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // x:Y (w:G, cv:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gpsImode_wrapper (gpsImode_wrapper.v)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myImode_v1_0 (myImode_v1_0.v), myImode_v1_0_S00_AXI_inst - myImode_v1_0_S00_AXI (myImode_v1_0_S00_AXI.v), tstart_counter - TstartCounter]", 4, false); // z:k (G:JPanel, cv:JFrame)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // i:l (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myImode_v1_0 (myImode_v1_0.v), myImode_v1_0_S00_AXI_inst - myImode_v1_0_S00_AXI (myImode_v1_0_S00_AXI.v), U_TdcCtrl - TdcCtrl]", 5, false); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myImode_v1_0 (myImode_v1_0.v), myImode_v1_0_S00_AXI_inst - myImode_v1_0_S00_AXI (myImode_v1_0_S00_AXI.v), allocateDataToEachChannel - AllocateDataToEachChannelAndSaveIt (myImode_v1_0_S00_AXI.v)]", 6); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myImode_v1_0 (myImode_v1_0.v), myImode_v1_0_S00_AXI_inst - myImode_v1_0_S00_AXI (myImode_v1_0_S00_AXI.v), tdcRegReadAndWrite - TdcRegReadAndWrite (myImode_v1_0_S00_AXI.v)]", 8); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myImode_v1_0 (myImode_v1_0.v), myImode_v1_0_S00_AXI_inst - myImode_v1_0_S00_AXI (myImode_v1_0_S00_AXI.v), tdcRegReadAndWrite - TdcRegReadAndWrite (myImode_v1_0_S00_AXI.v), tdcRegWrite - TdcRegWrite (myImode_v1_0_S00_AXI.v)]", 11); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myImode_v1_0 (myImode_v1_0.v), myImode_v1_0_S00_AXI_inst - myImode_v1_0_S00_AXI (myImode_v1_0_S00_AXI.v), tdcRegReadAndWrite - TdcRegReadAndWrite (myImode_v1_0_S00_AXI.v), tdcRegRead - TdcRegRead (myImode_v1_0_S00_AXI.v)]", 10); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 21); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 21); // z:k (G:JPanel, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: current_project myImode_v1_0_project 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 362 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // i:l (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 70 MB. Current time: 2/28/18 9:44:14 AM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 933 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // i:l (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("myImode_v1_0_S00_AXI.v", 128, 135); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myImode_v1_0 (myImode_v1_0.v), myImode_v1_0_S00_AXI_inst - myImode_v1_0_S00_AXI (myImode_v1_0_S00_AXI.v)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myImode_v1_0 (myImode_v1_0.v), myImode_v1_0_S00_AXI_inst - myImode_v1_0_S00_AXI (myImode_v1_0_S00_AXI.v), tstart_counter - TstartCounter]", 5, false); // z:k (G:JPanel, cv:JFrame)
+selectCodeEditor("myImode_v1_0_S00_AXI.v", 346, 189); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 104 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 2); // g:JideTabbedPane (N:aK, cv:JFrame)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g:JideTabbedPane (N:aK, cv:JFrame)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 2); // g:JideTabbedPane (N:aK, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // z:k (G:JPanel, cv:JFrame)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g:JideTabbedPane (N:aK, cv:JFrame)
+selectCodeEditor("myImode_v1_0_S00_AXI.v", 463, 271); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, myImode_v1_0_S00_AXI.v]", 2, false); // z:k (G:JPanel, cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near ?. [f:/Recent_Project/gpsImode_Proj_2/ip_repo/myImode_1.0/hdl/myImode_v1_0_S00_AXI.v:1246]. ]", 16, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;f:\Recent_Project\gpsImode_Proj_2\ip_repo\myImode_1.0\hdl\myImode_v1_0_S00_AXI.v;-;;-;16;-;line;-;1246;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("myImode_v1_0_S00_AXI.v", 143, 213); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("myImode_v1_0_S00_AXI.v", 62, 200); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // i:l (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("myImode_v1_0_S00_AXI.v", 313, 184); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-2216] Analyzing Verilog file f:/Recent_Project/gpsImode_Proj_2/ip_repo/myImode_1.0/hdl/myImode_v1_0_S00_AXI.v into library work [f:/Recent_Project/gpsImode_Proj_2/ip_repo/myImode_1.0/hdl/myImode_v1_0_S00_AXI.v:1]. ]", 12, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;f:\Recent_Project\gpsImode_Proj_2\ip_repo\myImode_1.0\hdl\myImode_v1_0_S00_AXI.v;-;;-;16;-;line;-;1;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // i:l (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-2216] Analyzing Verilog file f:/Recent_Project/gpsImode_Proj_2/ip_repo/myImode_1.0/hdl/myImode_v1_0_S00_AXI.v into library work [f:/Recent_Project/gpsImode_Proj_2/ip_repo/myImode_1.0/hdl/myImode_v1_0_S00_AXI.v:1]. ]", 14, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;f:\Recent_Project\gpsImode_Proj_2\ip_repo\myImode_1.0\hdl\myImode_v1_0_S00_AXI.v;-;;-;16;-;line;-;1;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-2216] Analyzing Verilog file f:/Recent_Project/gpsImode_Proj_2/ip_repo/myImode_1.0/hdl/myImode_v1_0_S00_AXI.v into library work [f:/Recent_Project/gpsImode_Proj_2/ip_repo/myImode_1.0/hdl/myImode_v1_0_S00_AXI.v:1]. ]", 14, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;f:\Recent_Project\gpsImode_Proj_2\ip_repo\myImode_1.0\hdl\myImode_v1_0_S00_AXI.v;-;;-;16;-;line;-;1;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-2216] Analyzing Verilog file f:/Recent_Project/gpsImode_Proj_2/ip_repo/myImode_1.0/hdl/myImode_v1_0_S00_AXI.v into library work [f:/Recent_Project/gpsImode_Proj_2/ip_repo/myImode_1.0/hdl/myImode_v1_0_S00_AXI.v:1]. ]", 12, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;f:\Recent_Project\gpsImode_Proj_2\ip_repo\myImode_1.0\hdl\myImode_v1_0_S00_AXI.v;-;;-;16;-;line;-;1;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-2216] Analyzing Verilog file f:/Recent_Project/gpsImode_Proj_2/ip_repo/myImode_1.0/hdl/myImode_v1_0_S00_AXI.v into library work [f:/Recent_Project/gpsImode_Proj_2/ip_repo/myImode_1.0/hdl/myImode_v1_0_S00_AXI.v:1]. ]", 14, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;f:\Recent_Project\gpsImode_Proj_2\ip_repo\myImode_1.0\hdl\myImode_v1_0_S00_AXI.v;-;;-;16;-;line;-;1;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+// Elapsed time: 345 seconds
+selectCodeEditor("myImode_v1_0_S00_AXI.v", 34, 406); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("myImode_v1_0_S00_AXI.v", 82, 349); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("myImode_v1_0_S00_AXI.v", 96, 431); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 70 MB. Current time: 2/28/18 10:14:15 AM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 67 MB. Current time: 2/28/18 10:44:15 AM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 3530 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // i:l (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - myImode", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Compatibility", 1); // ao:v (JViewport:JComponent, cv:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ao:v (JViewport:JComponent, cv:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ao:v (JViewport:JComponent, cv:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ao:v (JViewport:JComponent, cv:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // ao:v (JViewport:JComponent, cv:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cv:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cv:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 34 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// bL:g (cv:JFrame):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 66 MB. Current time: 2/28/18 10:55:32 AM CST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bL:g (cv:JFrame)
+// Tcl Message: ****** Webtalk v2016.2 (64-bit)   **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016   **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.  source f:/recent_project/gpsimode_proj_2/gpsimode_proj.tmp/myimode_v1_0_project/myImode_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Wed Feb 28 10:55:34 2018... 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path f:/Recent_Project/gpsImode_Proj_2/ip_repo 
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'f:/Recent_Project/gpsImode_Proj_2/ip_repo' 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gpsImode_wrapper (gpsImode_wrapper.v), gpsImode_i - gpsImode (gpsImode.bd)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gpsImode_wrapper (gpsImode_wrapper.v), gpsImode_i - gpsImode (gpsImode.bd)]", 2, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// bL:g (cv:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd} 
+dismissDialog("Open Block Design"); // bL:g (cv:JFrame)
+selectButton(PAResourceQtoS.SystemTab_REPORT_IP_STATUS, "Report IP Status"); // i:l (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a:JButton (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// Tcl Message: export_ip_user_files -of_objects [get_ips  gpsImode_myImode_0_1] -no_script -reset -quiet 
+// bL:g (cv:JFrame):  Upgrade IP : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: upgrade_ip -vlnv xilinx.com:user:myImode:1.0 [get_ips  gpsImode_myImode_0_1] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded gpsImode_myImode_0_1 (myImode_v1.0 1.0) from revision 33 to revision 34 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/Recent_Project/gpsImode_Proj_2/ip_upgrade.log'. 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// aD:x (cv:JFrame): Generate Output Products: addNotify
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aD:x)
+// bL:g (cv:JFrame):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd] 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Verilog Output written to : F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hdl/gpsImode.v Verilog Output written to : F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hdl/gpsImode_wrapper.v Wrote  : <F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd>  
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hw_handoff/gpsImode.hwh 
+// HMemoryUtils.trashcanNow. Engine heap size: 940 MB. GUI used memory: 65 MB. Current time: 2/28/18 10:56:06 AM CST
+// [Engine Memory]: 994 MB (+54381kb) [01:55:33]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Generated Block Design Tcl file F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hw_handoff/gpsImode_bd.tcl Generated Hardware Definition File F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hdl/gpsImode.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1418.141 ; gain = 261.758 
+// Tcl Message: export_ip_user_files -of_objects [get_files F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd] -no_script -force -quiet 
+// Tcl Message: export_simulation -of_objects [get_files F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd] -directory F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.ip_user_files/sim_scripts -ip_user_files_dir F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.ip_user_files -ipstatic_source_dir F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.ip_user_files/ipstatic -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 38 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "Upgrade IP"); // N:i
+// TclEventType: FILE_SET_CHANGE
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/myImode_0 ; true ; gpsImode_myImode_0_1 [myImode_v1.0] (IP revision change. IP definition 'myImode_v1.0 (1.0)' changed on disk) ; gpsImode_myImode_0_1 [myImode_v1.0] (IP revision change. IP definition 'myImode_v1.0 (1.0)' changed on disk) ;  ; myImode_v1.0 ; 1.0 (Rev. 33) ; 1.0 (Rev. 34) ; gpsImode_myImode_0_1 [myImode_v1.0] (IP revision change. IP definition 'myImode_v1.0 (1.0)' changed on disk) ; xc7z020clg484-1", 1, "/myImode_0", 0, false); // C:as (JViewport:JComponent, cv:JFrame)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a:JButton (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+selectButton("PAResourceTtoZ.UpgradeIP_SELECTED_IPS_ALREADY_UP_TO_DATE_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectTreeTableHeader(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "Source File", 0); // C:as (JViewport:JComponent, cv:JFrame)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // i:l (JPanel:JComponent, cv:JFrame)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // x:Y (w:G, cv:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gpsImode_wrapper (gpsImode_wrapper.v), gpsImode_i - gpsImode (gpsImode.bd)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gpsImode_wrapper (gpsImode_wrapper.v), gpsImode_i - gpsImode (gpsImode.bd)]", 2, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a:x (cv:JFrame): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:x)
+dismissDialog("Create HDL Wrapper"); // a:x (cv:JFrame)
+// Tcl Message: make_wrapper -files [get_files F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd] -top 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aV:y (cv:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aV:y)
+// bL:g (cv:JFrame):  Save Constraints : addNotify
+dismissDialog("Save Project"); // aV:y (cv:JFrame)
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// G:be (cv:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Constraints"); // bL:g (cv:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, G:be)
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // G:be (cv:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_LAUNCH
+// bL:g (cv:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Wed Feb 28 10:56:54 2018] Launched synth_1... Run output will be captured here: F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.runs/synth_1/runme.log [Wed Feb 28 10:56:54 2018] Launched impl_1... Run output will be captured here: F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bL:g (cv:JFrame)
+// Elapsed time: 38 seconds
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Simulation", 2); // g:JideTabbedPane (x:aK, cv:JFrame)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // g:JideTabbedPane (x:aK, cv:JFrame)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Simulation", 2); // g:JideTabbedPane (x:aK, cv:JFrame)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // g:JideTabbedPane (x:aK, cv:JFrame)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Synthesis", 0); // g:JideTabbedPane (x:aK, cv:JFrame)
+// Elapsed time: 28 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // i:i (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 197 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 119, 126); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 119, 126, false, false, false, false, true); // F:bH (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 181, 126); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 181, 126, false, false, false, false, true); // F:bH (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 152, 109); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 152, 109, false, false, false, false, true); // F:bH (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 141, 95); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 141, 95, false, false, false, false, true); // F:bH (JPanel:JComponent, cv:JFrame) - Double Click
+// [GUI Memory]: 135 MB (+967kb) [02:00:47]
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 134, 86); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 134, 86, false, false, false, false, true); // F:bH (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 128, 70); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 128, 70, false, false, false, false, true); // F:bH (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 120, 55); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 120, 55, false, false, false, false, true); // F:bH (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 107, 35); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 107, 35, false, false, false, false, true); // F:bH (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 113, 18); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 113, 18, false, false, false, false, true); // F:bH (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 145, 121); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 145, 121, false, false, false, false, true); // F:bH (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 182, 126); // F:bH (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 153 MB (+11841kb) [02:01:12]
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // g:JideTabbedPane (x:aK, cv:JFrame)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Synthesis", 0); // g:JideTabbedPane (x:aK, cv:JFrame)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Simulation", 2); // g:JideTabbedPane (x:aK, cv:JFrame)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // g:JideTabbedPane (x:aK, cv:JFrame)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Synthesis", 0); // g:JideTabbedPane (x:aK, cv:JFrame)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // g:JideTabbedPane (JPanel:JComponent, cv:JFrame)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // g:JideTabbedPane (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 35 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 370, 39); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 231, 105); // F:bH (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 312 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ap:G)
+dismissDialog("Bitstream Generation Completed"); // ap:G (cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 66 MB. Current time: 2/28/18 11:26:07 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 65 MB. Current time: 2/28/18 11:56:08 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 12:26:09 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 12:56:10 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 1:26:10 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 1:56:11 PM CST
+// Elapsed time: 10493 seconds
+closeMainWindow("gpsImode_Proj - [F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.xpr] - Vivado 2016.2"); // cv:JFrame
+// G:be (cv:JFrame): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, G:be)
+dismissDialog("Exit Vivado"); // G:be (cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 2:26:13 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 2:56:14 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 3:26:15 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 3:56:16 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 4:26:17 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 4:56:17 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 5:26:17 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 5:56:17 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 6:26:18 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 6:56:18 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 7:26:18 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 7:56:19 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 63 MB. Current time: 2/28/18 8:26:19 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 8:56:19 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 9:26:20 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 2/28/18 9:56:20 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 62 MB. Current time: 3/1/18 9:47:45 AM CST
+// Elapsed time: 72065 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bL:g (cv:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd} 
+dismissDialog("Open Block Design"); // bL:g (cv:JFrame)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 564, 337, 1192, 612, false, false, false, true, false); // ew:aK (TdiGroup:JideTabbedPane, cv:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k:x (cv:JFrame): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, k:x)
+// bL:g (cv:JFrame):  Edit in IP Packager : addNotify
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name myImode_v1_0_project -directory F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.tmp/myImode_v1_0_project f:/Recent_Project/gpsImode_Proj_2/ip_repo/myImode_1.0/component.xml 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramFiles/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Recent_Project/gpsImode_Proj_2/ip_repo'. 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// 'n' command handler elapsed time: 4 seconds
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:39 . Memory (MB): peak = 1523.586 ; gain = 8.582 
+// 'i' command handler elapsed time: 43 seconds
+// Elapsed time: 43 seconds
+dismissDialog("Edit in IP Packager"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myImode_v1_0 (myImode_v1_0.v)]", 1); // z:k (G:JPanel, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myImode_v1_0 (myImode_v1_0.v), myImode_v1_0_S00_AXI_inst - myImode_v1_0_S00_AXI (myImode_v1_0_S00_AXI.v)]", 2); // z:k (G:JPanel, cv:JFrame)
+// PAPropertyPanels.initPanels (myImode_v1_0_S00_AXI.v) elapsed time: 0.4s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myImode_v1_0 (myImode_v1_0.v), myImode_v1_0_S00_AXI_inst - myImode_v1_0_S00_AXI (myImode_v1_0_S00_AXI.v)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myImode_v1_0 (myImode_v1_0.v), myImode_v1_0_S00_AXI_inst - myImode_v1_0_S00_AXI (myImode_v1_0_S00_AXI.v)]", 2, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myImode_v1_0 (myImode_v1_0.v), myImode_v1_0_S00_AXI_inst - myImode_v1_0_S00_AXI (myImode_v1_0_S00_AXI.v)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+setText("PAResourceAtoD.AbstractFileView_READ_ONLY", "f:/Recent_Project/gpsImode_Proj_2/ip_repo/myImode_1.0/hdl/myImode_v1_0_S00_AXI.v"); // c:ao (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 247 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // i:l (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 64 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // i:l (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 236 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 175 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - myImode", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cv:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cv:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 35 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// bL:g (cv:JFrame):  Package IP : addNotify
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// bL:g (cv:JFrame):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 84 MB. Current time: 3/1/18 10:17:01 AM CST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bL:g (cv:JFrame)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // i:l (JPanel:JComponent, cv:JFrame)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// Tcl Message: ****** Webtalk v2016.2 (64-bit)   **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016   **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.  source f:/recent_project/gpsimode_proj_2/gpsimode_proj.tmp/myimode_v1_0_project/myImode_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Thu Mar 01 10:17:04 2018... 
+selectButton("OptionPane.button", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path f:/Recent_Project/gpsImode_Proj_2/ip_repo 
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'f:/Recent_Project/gpsImode_Proj_2/ip_repo' 
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // i:l (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // i:l (JPanel:JComponent, cv:JFrame)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// bL:g (cv:JFrame):  Report IP Status : addNotify
+// Tcl Message: report_ip_status -name ip_status  
+dismissDialog("Report IP Status"); // bL:g (cv:JFrame)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a:JButton (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// bL:g (cv:JFrame):  Upgrade IP : addNotify
+// Tcl Message: export_ip_user_files -of_objects [get_ips  gpsImode_myImode_0_1] -no_script -reset -quiet 
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: upgrade_ip -vlnv xilinx.com:user:myImode:1.0 [get_ips  gpsImode_myImode_0_1] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded gpsImode_myImode_0_1 (myImode_v1.0 1.0) from revision 34 to revision 35 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/Recent_Project/gpsImode_Proj_2/ip_upgrade.log'. 
+// aD:x (cv:JFrame): Generate Output Products: addNotify
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aD:x)
+// bL:g (cv:JFrame):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: generate_target all [get_files  F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Verilog Output written to : F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hdl/gpsImode.v Verilog Output written to : F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hdl/gpsImode_wrapper.v Wrote  : <F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd>  
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hw_handoff/gpsImode.hwh 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Generated Block Design Tcl file F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hw_handoff/gpsImode_bd.tcl Generated Hardware Definition File F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/hdl/gpsImode.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1571.191 ; gain = 35.848 
+// Tcl Message: export_ip_user_files -of_objects [get_files F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd] -no_script -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.srcs/sources_1/bd/gpsImode/gpsImode.bd] -directory F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.ip_user_files/sim_scripts -ip_user_files_dir F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.ip_user_files -ipstatic_source_dir F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.ip_user_files/ipstatic -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// Elapsed time: 36 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bL:g)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // i:l (JPanel:JComponent, cv:JFrame)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// bL:g (cv:JFrame):  Report IP Status : addNotify
+// Tcl Message: report_ip_status -name ip_status  
+dismissDialog("Report IP Status"); // bL:g (cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// ai:x (cv:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ai:x)
+selectButton("PAResourceItoN.NewLaunchHardwareDialog_EXPORTED_HARDWARE_SYSTEM_OUT_OF_DATE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+dismissDialog("Launch SDK"); // ai:x (cv:JFrame)
+// Tcl Message: launch_sdk -workspace F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.sdk -hwspec F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.sdk -hwspec F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.sdk/gpsImode_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// Elapsed time: 698 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 455, 145, 1192, 612, false, false, false, true, false); // ew:aK (TdiGroup:JideTabbedPane, cv:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+// Elapsed time: 93 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 458, 288, 1192, 612, false, false, false, true, false); // ew:aK (TdiGroup:JideTabbedPane, cv:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k:x (cv:JFrame): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, k:x)
+// bL:g (cv:JFrame):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name myip_fifo_ctrl_v1_0_project -directory F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.tmp/myip_fifo_ctrl_v1_0_project f:/Recent_Project/gpsImode_Proj_2/ip_repo/myip_fifo_ctrl_1.0/component.xml 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramFiles/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Recent_Project/gpsImode_Proj_2/ip_repo'. INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// 'i' command handler elapsed time: 4 seconds
+dismissDialog("Edit in IP Packager"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myip_fifo_ctrl_v1_0 (myip_fifo_ctrl_v1_0.v)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myip_fifo_ctrl_v1_0 (myip_fifo_ctrl_v1_0.v), myip_fifo_ctrl_v1_0_FIFO_AXI_inst - myip_fifo_ctrl_v1_0_FIFO_AXI (myip_fifo_ctrl_v1_0_FIFO_AXI.v)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, myip_fifo_ctrl_v1_0 (myip_fifo_ctrl_v1_0.v), myip_fifo_ctrl_v1_0_FIFO_AXI_inst - myip_fifo_ctrl_v1_0_FIFO_AXI (myip_fifo_ctrl_v1_0_FIFO_AXI.v)]", 2, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectCodeEditor("myip_fifo_ctrl_v1_0_FIFO_AXI.v", 74, 332); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 58 seconds
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 93 MB. Current time: 3/1/18 10:47:02 AM CST
+// Tcl Message: current_project gpsImode_Proj 
+// Elapsed time: 1374 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 81, 271, 1192, 612, false, false, false, true, false); // ew:aK (TdiGroup:JideTabbedPane, cv:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k:x (cv:JFrame): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, k:x)
+// bL:g (cv:JFrame):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name Status_v1_0_project -directory F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.tmp/Status_v1_0_project f:/Recent_Project/gpsImode_Proj_2/ip_repo/Status_1.0/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramFiles/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Recent_Project/gpsImode_Proj_2/ip_repo'. INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// 'i' command handler elapsed time: 5 seconds
+dismissDialog("Edit in IP Packager"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Status_v1_0 (Status_v1_0.v)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Status_v1_0 (Status_v1_0.v), Status_v1_0_STATUS_AXI_inst - Status_v1_0_STATUS_AXI (Status_v1_0_STATUS_AXI.v)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Status_v1_0 (Status_v1_0.v), Status_v1_0_STATUS_AXI_inst - Status_v1_0_STATUS_AXI (Status_v1_0_STATUS_AXI.v)]", 2, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// Elapsed time: 558 seconds
+closeMainWindow("Status_v1_0_project - [f:/recent_project/gpsimode_proj_2/gpsimode_proj.tmp/status_v1_0_project/Status_v1_0_project.xpr] - Vivado 2016.2"); // cv:JFrame
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// G:be (cv:JFrame): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// bL:g (cv:JFrame):  Close Project : addNotify
+dismissDialog("Close Project"); // G:be (cv:JFrame)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 100 MB. Current time: 3/1/18 11:05:16 AM CST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bL:g (cv:JFrame)
+// Tcl Message: ****** Webtalk v2016.2 (64-bit)   **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016   **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.  source f:/recent_project/gpsimode_proj_2/gpsimode_proj.tmp/status_v1_0_project/Status_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Thu Mar 01 11:05:17 2018... 
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 94 MB. Current time: 3/1/18 11:35:19 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 89 MB. Current time: 3/1/18 12:05:21 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 88 MB. Current time: 3/1/18 12:35:23 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 88 MB. Current time: 3/1/18 1:05:25 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 88 MB. Current time: 3/1/18 1:35:26 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 88 MB. Current time: 3/1/18 2:05:28 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 88 MB. Current time: 3/1/18 2:35:30 PM CST
+// Tcl Message: current_project gpsImode_Proj 
+// Elapsed time: 13266 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 59, 286, 1192, 612, false, false, false, true, false); // ew:aK (TdiGroup:JideTabbedPane, cv:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 76, 271, 1192, 612, false, false, false, true, false); // ew:aK (TdiGroup:JideTabbedPane, cv:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k:x (cv:JFrame): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, k:x)
+// bL:g (cv:JFrame):  Edit in IP Packager : addNotify
+selectButton("PAResourceEtoH.EditIPProjectNameChooser_PROJECT_FOLDER_ALREADY_EXISTS_OK_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name Status_v1_0_project -directory F:/Recent_Project/gpsImode_Proj_2/gpsImode_Proj.tmp/Status_v1_0_project f:/Recent_Project/gpsImode_Proj_2/ip_repo/Status_1.0/component.xml 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramFiles/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Recent_Project/gpsImode_Proj_2/ip_repo'. INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// 'i' command handler elapsed time: 5 seconds
+dismissDialog("Edit in IP Packager"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Status_v1_0 (Status_v1_0.v)]", 1); // z:k (G:JPanel, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Status_v1_0 (Status_v1_0.v), Status_v1_0_STATUS_AXI_inst - Status_v1_0_STATUS_AXI (Status_v1_0_STATUS_AXI.v), status - Status (Status_v1_0_STATUS_AXI.v)]", 3, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Status_v1_0 (Status_v1_0.v), Status_v1_0_STATUS_AXI_inst - Status_v1_0_STATUS_AXI (Status_v1_0_STATUS_AXI.v)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Status_v1_0 (Status_v1_0.v), Status_v1_0_STATUS_AXI_inst - Status_v1_0_STATUS_AXI (Status_v1_0_STATUS_AXI.v)]", 2, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+/*
+#-------------------------------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# Current time: 3/1/18 2:49:10 PM CST
+# Process ID: 10768
+# Platform: Windows
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+ui.frmwork.CommandFailedException: boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "F:/Recent_Project/gpsImode_Proj_2/.Xil/Vivado-10768-ZHANG/ss10768.2485253728304.log" (See F:/Recent_Project/gpsImode_Proj_2/vivado_pid10768.debug)
+*/
+// HOptionPane Error: "boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "F:/Recent_Project/gpsImode_Proj_<br>2/.Xil/Vivado-10768-ZHANG/ss10768.2485253728304.log" (Vivado v2016.2 (64-bit))"
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 153 seconds
+selectButton("RDIResource.MainWindowUtils_ERROR_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// Tcl Message: current_project gpsImode_Proj 
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 103 MB. Current time: 3/1/18 3:05:31 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 101 MB. Current time: 3/1/18 3:35:32 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 101 MB. Current time: 3/1/18 4:05:33 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 100 MB. Current time: 3/1/18 4:35:33 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 100 MB. Current time: 3/1/18 5:05:33 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 994 MB. GUI used memory: 100 MB. Current time: 3/1/18 5:35:33 PM CST
+
+// Exiting Vivado with a status code 0 at 3/1/18 6:01:01 PM CST...
+// Elapsed time: 33:00:26

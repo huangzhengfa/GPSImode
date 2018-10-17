@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]F:\Recent_Project\gpsImode_Proj_2\gpsImode_Proj.sdk\flash\Debug\flash.elf
+	F:\Recent_Project\gpsImode_Proj_2\gpsImode_Proj.sdk\gpsImode_wrapper_hw_platform_0\gpsImode_wrapper.bit
+	F:\Recent_Project\gpsImode_Proj_2\gpsImode_Proj.sdk\TDC\Debug\TDC.elf
+}

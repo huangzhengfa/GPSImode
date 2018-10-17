@@ -1,0 +1,282 @@
+/*
+ * GPS.c
+ *
+ *  Created on: 2016年11月16日
+ *      Author: lin.zheng
+ */
+#include "GPS.h"
+#include "sleep.h"
+#include "xuartlite.h"
+#include "xil_io.h"
+
+/************************** Variable Definitions *****************************/
+
+/*
+ * The instances to support the device drivers are global such that they
+ * are initialized to zero each time the program runs.
+ */
+
+static  int monthOverLeapYear[12]={31,29,31,30,31,30,31,31,30,31,30,31};
+static  int monthOverUsualYear[12]={31,28,31,30,31,30,31,31,30,31,30,31};
+
+void Gps_Init(void){
+
+    int RecvCount = 0;
+    XUartLite GpsUartLite;      /* Instance of the UartLite Device */
+    u8  GpsBuffer[GPS_BUFFER_SIZE] = {0};
+    GPS_Data gps_data={0};
+
+    XUartLite_Initialize(&GpsUartLite, GPS_UARTLITE_DEVICE_ID);
+    WaitUnitlPpsCome();
+    print("Pps Come\r\n");
+    RecvCount = Gps_GetInfoFromUart( &GpsUartLite,GpsBuffer);
+    //print("JSZH_2\n");
+    Gps_GetTimeInfo(GpsBuffer, &gps_data, RecvCount);
+    xil_printf("GPS info: %s \n",GpsBuffer);
+    Gps_TimeCorrect(&gps_data);
+    sprintf("GPS time: %d %d %d, %d : %d : %d \n",(gps_data->year),\
+    		(gps_data->month),(gps_data->day),(gps_data->utc_hour),(gps_data->minute),(gps_data->second));
+    GPS_SetTime(&gps_data);
+
+    return;
+}
+
+void WaitUnitlPpsCome(void){
+    while(GPS_mReadReg(GPS_BASEADDR, CONTROL_REG_OFFSET)== 0){
+        usleep(1);
+    }
+    return;
+}
+int Gps_GetInfoFromUart(XUartLite *GpsUartLiteInstPtr, u8 *GpsBuffer){
+    int Index = 0;
+    u8  RecvBuffer[GPS_RECV_BUFFER_SIZE];/* Buffer for Receiving Data */
+    print("Start receive");
+    while (1) {
+        if(XUartLite_Recv(GpsUartLiteInstPtr, RecvBuffer, GPS_RECV_BUFFER_SIZE)){
+//          xil_printf(RecvBuffer);
+            if((RecvBuffer[0]=='$')||(Index>0))
+            {
+                //print("JSZH_5\n");
+                if(RecvBuffer[0]=='$')
+                    Index = 0;
+                GpsBuffer[Index++]=RecvBuffer[0];
+            }
+            /*通过GPRMC字符串里面的'C'和整条数据的换行符来确认并保留GPRMC数据*/
+            if((Index>5)&&(RecvBuffer[0]=='\n')&&(GpsBuffer[5] == 'C'))
+            {
+                print("JSZH_6\n");
+                GpsBuffer[Index]='\0';
+                break;
+            }
+        }
+    }
+
+    return Index;
+}
+//修复了GPS信号不好的时候，时间读取错乱的问题，没有时间数据时，时间为0
+void Gps_GetTimeInfo(u8 *GpsBuffer, GPS_Data *gps_data, int Index){
+    int count = 0;
+    int len = 0;
+    int timeflag=0;
+    unsigned char h1,h2,m1,m2,s1,s2;
+    unsigned char D1,D2,M1,M2,Y1,Y2;
+    while(GpsBuffer[len] != '\0')
+    {
+        if(GpsBuffer[len] == ',') count++;
+        if((count == 1) && (timeflag==0))
+        {
+             if(GpsBuffer[len+1]!=',')
+             {
+                 h1 = GpsBuffer[len+1] - '0';
+                 h2 = GpsBuffer[len+2] - '0';
+                 m1 = GpsBuffer[len+3] - '0';
+                 m2 = GpsBuffer[len+4] - '0';
+                 s1 = GpsBuffer[len+5] - '0';
+                 s2 = GpsBuffer[len+6] - '0';
+             }
+             else
+             {
+                 h1=0;
+                 h2=0;
+                 m1=0;
+                 m2=0;
+                 s1=0;
+                 s2=0;
+             }
+             gps_data->utc_hour = h1*10+h2;
+             gps_data->minute = m1*10+m2;
+             gps_data->second = s1*10+s2;
+             timeflag = 1;
+        }
+        if(count == 9)
+        {
+            if(GpsBuffer[len+1]!=',')
+            {
+                D1 = GpsBuffer[len+1] - '0';
+                D2 = GpsBuffer[len+2] - '0';
+                M1 = GpsBuffer[len+3] - '0';
+                M2 = GpsBuffer[len+4] - '0';
+                Y1 = GpsBuffer[len+5] - '0';
+                Y2 = GpsBuffer[len+6] - '0';
+            }
+            else
+            {
+                D1=0;
+                D2=0;
+                M1=0;
+                M2=0;
+                Y1=0;
+                Y2=0;
+            }
+            gps_data->day = D1*10+D2;
+            gps_data->month = M1*10+M2;
+            gps_data->year = Y1*10+Y2;
+            return;
+        }
+        len++;
+    }
+    xil_printf("GPS info: %s",GpsBuffer);
+    return;
+}
+
+
+void Gps_TimeCorrect(GPS_Data *gps_data){
+
+    gps_data->utc_hour = gps_data->utc_hour + HOUR_OFFSET;
+    gps_data->year = gps_data->year + YEAR_OFFSET;
+
+    if(gps_data->utc_hour > 23){
+        gps_data->utc_hour = gps_data->utc_hour - 24;
+        gps_data->day ++;
+        if(gps_data->year%4 == 0){
+            if(gps_data->day == monthOverLeapYear[gps_data->month]){
+                gps_data->day = 1;
+                gps_data->month ++;
+            }
+        }
+        else{
+            if(gps_data->day == monthOverUsualYear[gps_data->month]){
+                gps_data->month ++;
+                gps_data->day = 1;
+            }
+        }
+
+        if(gps_data->month == 13){
+            gps_data->month = 1;
+            gps_data->year ++;
+        }
+    }
+    return;
+}
+
+
+void GPS_SetTime(GPS_Data *gps_data){
+    GPS_mWriteReg(GPS_BASEADDR, CONTROL_REG_OFFSET, 0x1);
+    GPS_mWriteReg(GPS_BASEADDR, YEAR_REG_OFFSET, gps_data->year);
+    GPS_mWriteReg(GPS_BASEADDR, MONTH_REG_OFFSET, gps_data->month);
+    GPS_mWriteReg(GPS_BASEADDR, DAY_REG_OFFSET, gps_data->day);
+    GPS_mWriteReg(GPS_BASEADDR, HOUR_REG_OFFSET, gps_data->utc_hour);
+    GPS_mWriteReg(GPS_BASEADDR, MINUTE_REG_OFFSET, gps_data->minute);
+    GPS_mWriteReg(GPS_BASEADDR, SECOND_REG_OFFSET, gps_data->second);
+    GPS_mWriteReg(GPS_BASEADDR, CONTROL_REG_OFFSET, 0x0);
+    return;
+}
+
+
+void Gps_FuncTest(void){
+    GPS_Data GpsDataFromFpga={0};
+
+    WaitUnitlPpsCome();
+    usleep(100);
+    GpsDataFromFpga.year = GPS_mReadReg(GPS_BASEADDR, YEAR_REG_OFFSET);
+    GpsDataFromFpga.month = GPS_mReadReg(GPS_BASEADDR, MONTH_REG_OFFSET);
+    GpsDataFromFpga.day = GPS_mReadReg(GPS_BASEADDR, DAY_REG_OFFSET);
+    GpsDataFromFpga.utc_hour = GPS_mReadReg(GPS_BASEADDR, HOUR_REG_OFFSET);
+    GpsDataFromFpga.minute = GPS_mReadReg(GPS_BASEADDR, MINUTE_REG_OFFSET);
+    GpsDataFromFpga.second = GPS_mReadReg(GPS_BASEADDR, SECOND_REG_OFFSET);
+    GpsDataFromFpga.millisec = GPS_mReadReg(GPS_BASEADDR, MILLISEC_REG_OFFSET);
+    GpsDataFromFpga.microsec = GPS_mReadReg(GPS_BASEADDR, MICROSEC_REG_OFFSET);
+
+    xil_printf("Time now:%2d %2d %2d %2d %2d %2d %3d %3d\r\n",
+            GpsDataFromFpga.year,GpsDataFromFpga.month,GpsDataFromFpga.day,
+            GpsDataFromFpga.utc_hour,GpsDataFromFpga.minute,GpsDataFromFpga.second,
+            GpsDataFromFpga.millisec,GpsDataFromFpga.microsec);
+    return;
+
+}
+#define TIME_REG_1  36
+#define TIME_REG_2  40
+
+
+void GPS_TriggerTimeTest(void){
+    Time_Data GpsDataFromFpga={0};
+    unsigned int yearMonthDayMillisec = 0;
+    unsigned int hourMinuteSecondMicrosec = 0;
+    yearMonthDayMillisec = GPS_mReadReg(GPS_BASEADDR, TIME_REG_1);
+    hourMinuteSecondMicrosec = GPS_mReadReg(GPS_BASEADDR, TIME_REG_2);
+
+    GpsDataFromFpga.year = (yearMonthDayMillisec>>19)&0xfff;
+    GpsDataFromFpga.month = (yearMonthDayMillisec >> 15)& 0xf;
+    GpsDataFromFpga.day = (yearMonthDayMillisec>> 10)& 0x1f;
+    GpsDataFromFpga.hour = (hourMinuteSecondMicrosec>> 22 )& 0x1f;
+    GpsDataFromFpga.minute = (hourMinuteSecondMicrosec >> 16 )& 0x3f;
+    GpsDataFromFpga.second = (hourMinuteSecondMicrosec >> 10 )& 0x3F;
+    GpsDataFromFpga.millisec = yearMonthDayMillisec & 0x3ff;
+    GpsDataFromFpga.microsec = hourMinuteSecondMicrosec & 0x3ff;
+
+
+    xil_printf("Get:%d %d %2d %2d %2d %2d %2d %2d %3d %3d\n\r",
+                GpsDataFromFpga.year,GpsDataFromFpga.month,GpsDataFromFpga.day,
+                GpsDataFromFpga.hour,GpsDataFromFpga.minute,GpsDataFromFpga.second,
+                GpsDataFromFpga.millisec,GpsDataFromFpga.microsec);
+
+        return;
+
+}
+
+void Gps_GetTriggerTimeFromFpga(Time_Data *timeData){
+    timeData->timeData1 = GPS_mReadReg(GPS_BASEADDR, TIME_REG_1);
+    timeData->timeData2 = GPS_mReadReg(GPS_BASEADDR, TIME_REG_2);
+    return;
+}
+
+void GPS_timeDataDecode(Time_Data *timeData){
+    timeData->year = ((timeData->timeData1) >>19)&0xfff;
+    timeData->month = ((timeData->timeData1) >> 15)& 0xf;
+    timeData->day = ((timeData->timeData1) >> 10)& 0x1f;
+    timeData->hour = ((timeData->timeData2)>> 22 )& 0x1f;
+    timeData->minute = ((timeData->timeData2) >> 16 )& 0x3f;
+    timeData->second = ((timeData->timeData2) >> 10 )& 0x3F;
+    timeData->millisec = (timeData->timeData1) & 0x3ff;
+    timeData->microsec = (timeData->timeData2) & 0x3ff;
+    return;
+}
+
+void GPS_printTime(Time_Data *timeData){
+    xil_printf("%4d/%2d/%2d\t%2d:%2d:%2d:%3d:%3d\t",
+            timeData->year,timeData->month,timeData->day,
+            timeData->hour,timeData->minute,timeData->second,
+            timeData->millisec,timeData->microsec);
+    return;
+
+}
+
+void Gps_GetRealTime(Time_Data *timeData)
+{
+
+    timeData->year = GPS_mReadReg(GPS_BASEADDR, YEAR_REG_OFFSET);
+    timeData->month = GPS_mReadReg(GPS_BASEADDR, MONTH_REG_OFFSET);
+    timeData->day = GPS_mReadReg(GPS_BASEADDR, DAY_REG_OFFSET);
+    timeData->hour = GPS_mReadReg(GPS_BASEADDR, HOUR_REG_OFFSET);
+    timeData->minute = GPS_mReadReg(GPS_BASEADDR, MINUTE_REG_OFFSET);
+    timeData->second = GPS_mReadReg(GPS_BASEADDR, SECOND_REG_OFFSET);
+    timeData->millisec = GPS_mReadReg(GPS_BASEADDR, MILLISEC_REG_OFFSET);
+    timeData->microsec = GPS_mReadReg(GPS_BASEADDR, MICROSEC_REG_OFFSET);
+    return;
+}
+
+
+
+
+
+

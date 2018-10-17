@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Oct 17 10:18:07 2018
+# Process ID: 14000
+# Current directory: c:/Users/zhang/Desktop/progect/gpsImode_Proj_2
+# Command line: wbtcv.exe -mode batch -source c:/users/zhang/desktop/progect/gpsimode_proj_2/gpsimode_proj.tmp/newgpsip_v1_0_project/newGpsIp_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: c:/Users/zhang/Desktop/progect/gpsImode_Proj_2/webtalk.log
+# Journal file: c:/Users/zhang/Desktop/progect/gpsImode_Proj_2\webtalk.jou
+#-----------------------------------------------------------
+source c:/users/zhang/desktop/progect/gpsimode_proj_2/gpsimode_proj.tmp/newgpsip_v1_0_project/newGpsIp_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 17 10:18:07 2018...
